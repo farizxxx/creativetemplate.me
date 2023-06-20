@@ -1,0 +1,70 @@
+baseURL = 'https://creativetemplate.me/'
+languageCode = 'en-US'
+defaultContentLanguage = 'en-us'
+title = 'CreativeTemplate.me - Your Source for Inspiring Crafts and Embroidery Ideas' # Title on Meta Tags
+paginate = 18
+theme = 'alpha'
+enableRobotsTXT = true
+disableKinds = ['section', 'posts']
+
+[permalinks]
+  posts = '/:title/'
+  pages = '/:title/'
+
+
+[taxonomies]
+  category = 'categories'
+
+[outputs]
+  page = ['HTML']
+  home = ['HTML','RSS']
+  section = ['HTML']
+  taxonomyTerm = ['HTML']
+  taxonomy = ['HTML']
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = 'application/rss'
+    baseName = 'rss'    
+
+[params]
+  title = 'Creative Template' # Title on Header
+  tagline = 'Embroidery Delights, Crafting Wonders'
+  description = 'Explore a world of creativity with CreativeTemplate.me. Find endless inspiration, patterns, and techniques for crafts and embroidery projects. Unleash your artistic side today!'
+  author = 'CraftyNeedle'
+  recentposts = 15
+
+[menu]
+
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 1
+
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 2
+
+  [[menu.main]]
+    identifier = 'privacy-policy'
+    name = 'Privacy Policy'
+    url = '/privacy-policy/'
+    weight = 3
+
+  [[menu.main]]
+    identifier = 'dmca'
+    name = 'DMCA'
+    url = '/dmca/'
+    weight = 4
+
+# [menu]
+
+#   [[menu.socialsidebar]]
+#     identifier = 'facebook'
+#     name = 'facebook'
+#     url = '#'
+#     icon = '<i class='fa fa-facebook'></i>'
+#     weight = '1'
